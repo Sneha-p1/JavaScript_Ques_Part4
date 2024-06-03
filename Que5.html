@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="f1()">
+    <h3 id="id1" ondrag="f2()">drag content..</h3>
+    <h3 id="id2" onmouseover="f3()">on mouse over</h3>
+    <h3 id="id3" onmousemove="f4()">on mouse move</h3>
+    <script>
+        function f1()
+        {
+            window.alert("reload")
+        }
+        function f2()
+        {   
+            document.getElementById("id1").innerHTML="dragging content..."
+            // document.write("dragging content...")
+        }
+        function f3()
+        {
+            document.getElementById("id2").innerHTML="mouse over the content.."
+        }
+        function f4()
+            {
+                document.getElementById("id3").innerHTML="mouse is moving over the content..."
+            }
+        
+    </script>
+</body>
+
+</html>
